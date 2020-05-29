@@ -1,0 +1,235 @@
+*{
+    padding: 0 auto;
+    margin:0 auto;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.borda{
+    border:1px #ccc solid
+}
+.layer-preta{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: absolute;
+    background-color:rgba(0,0, 0, 0.5);
+}
+
+.container-menus{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+}
+
+.container-menus > div:not(.conteudo-pagina){
+    width: 100%!important;
+    height:12%;
+    background: #F5F5F5;
+}
+
+.container-menus button{
+    border: none;
+    color: #1164A8;
+    cursor: pointer;
+}
+
+
+
+.menu-superior{
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.div-logo{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    top:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background: #F5F5F5;
+    box-shadow: 0px -4px 13px rgba(0, 0, 0, 0.09);
+}
+
+.div-logo img{
+    width: 100px;
+    height: 108px;
+
+}
+
+.conteudo-pagina{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+
+    height: 76%;
+    
+}
+
+.conteudo-pagina .titulo{
+
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.09em;
+    
+    color: #E5E5E5;
+    
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.37);
+}
+
+.conteudo-pagina .corpo-texto{
+    font-family: 'Pacifico', cursive;
+    color: #E5E5E5;
+    font-style: normal;
+  
+    font-size: 31px;
+    line-height: 135.8%;
+
+    /* or 42px */
+    text-align: center;
+    letter-spacing: 0.02em
+}
+
+.conteudo-pagina button{
+    width: 361px;
+    height: 64px;
+    margin-top: 50px;
+    
+    
+    background: linear-gradient(1.07deg, #FF7777 -104.17%, #BF0411 122.77%);
+    box-shadow: 0px 4px 13px rgba(19, 19, 19, 0.35);
+    border-radius: 300px;
+
+    
+
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 32px;
+
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+.menu-superior button{
+    width: 50%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.menu-superior button:nth-of-type(1){
+    border-radius:0px 0px 0px 20px;
+}
+
+.menu-superior button:nth-of-type(2){
+    border-radius:0px 0px 20px 0px;
+}
+
+.menu-inferior{
+    position: absolute;
+    bottom:0;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-inferior button{
+    width: 33.33%;
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+.menu-inferior button:nth-of-type(1){
+    border-radius:20px 0px 0px 0px;
+}
+
+.menu-inferior button:nth-of-type(3){
+    border-radius:0px 20px 0px 0px;
+}
+
+
+
+    
+.container-page{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+
+
+.container-video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#video-bg{
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    
+    
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+}
+
+@media (min-aspect-ratio:16/9){
+    #video-bg{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-aspect-ratio:16/9){
+    #video-bg{
+        width: auto;
+        height: 100%;
+    }
+
+}
